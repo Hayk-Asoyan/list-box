@@ -17,7 +17,7 @@ A flexible and customizable dropdown component built using Svelte.
 Install the package using npm:
 
 ```bash
-npm install your-svelte-dropdown-package-name
+npm install list-box-svelte
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ npm install your-svelte-dropdown-package-name
 Import the `Dropdown` component into your Svelte file:
 
 ```javascript
-import Dropdown from 'your-svelte-dropdown-package-name';
+import Dropdown from 'list-box-svelte';
 ```
 
 Use it within your Svelte template:
