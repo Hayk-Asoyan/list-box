@@ -1,8 +1,8 @@
 <script>
     import { createEventDispatcher, onMount } from 'svelte'
 
-    import CheckIcon from '$lib/assets/Icons/CheckIcon.svelte'
-    import InputSearch from '$lib/components/shareble/InputSearch/InputSearch.svelte'
+    import CheckIcon from '../assets/CheckIcon.svelte'
+    import InputSearch from '$lib/InputSearch.svelte'
 
     import { clickOutside } from '../utils/clickOutside.jsx'
     import { debounce, searchInObjectValues } from '../utils/common.js'
