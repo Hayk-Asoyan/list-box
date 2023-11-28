@@ -1,7 +1,3 @@
-Creating a comprehensive README for a Svelte component involves various sections to guide users on installation, usage, features, and examples. Here's an outline for an advanced README:
-
----
-
 # Svelte Dropdown Component
 
 A flexible and customizable dropdown component built using Svelte.
