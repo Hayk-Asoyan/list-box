@@ -103,7 +103,7 @@ Contributions are welcome! To contribute to this project, follow these steps:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](license).
 
 ---
 
