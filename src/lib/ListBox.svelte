@@ -23,7 +23,6 @@
 
     onMount(() => {
         const handleKeydown = (event) => {
-            console.log(event)
             if (dropdownVisible) {
                 if (event.key === 'ArrowDown') {
                     event.preventDefault()
@@ -67,14 +66,14 @@
     $: {
         filterData = items
     }
-    $: console.log(items)
+
     function handleFilter(e) {
         debounce(() => search(items, e.target.value), 200)
     }
 </script>
 
 <div
-        class="{$$restProps.class + ' dropdown'}"
+        class="{($$restProps.class ?? '') + ' dropdown'}"
         use:clickOutside
         on:click_outside="{handleClickOutside}">
     <button
@@ -138,9 +137,9 @@
         margin: 0;
         padding: 0;
         background: white;
-        border: 1px solid var(--primary-color80);
+        border: 1px solid #bebebe;
         border-radius: 4px;
-        box-shadow: var(--shadow);
+        box-shadow: 0 11px 15px -7px rgb(0 0 0 / 10%), 0 3px 8px 3px rgb(0 0 0 / 7%);
         z-index: 99999;
         font-size: var(--f12);
         line-height: 1.5;
@@ -159,13 +158,14 @@
     .dropdown ul li:not(.search) {
         padding: 10px 10px 10px 40px;
         position: relative;
+        text-align: left;
     }
 
     .dropdown ul li:not(:last-child, .search) {
         border-bottom: 1px solid #c4c4c4;
     }
     .dropdown ul li.focused {
-        background: var(--primary-bg);
+        background: #ffc9a7;
         cursor: default;
     }
 
@@ -183,7 +183,7 @@
     button {
         background-color: unset;
         padding: 6px 16px;
-        border: 1px solid var(--primary-color80);
+        border: 1px solid #bebebe;
         border-radius: 4px;
         width: 100%;
         text-align: left;
@@ -194,6 +194,6 @@
     }
     .material-icons {
         padding-left: 10px;
-        color: var(--primary-color);
+        color: #646464;
     }
 </style>

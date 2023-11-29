@@ -25,7 +25,7 @@ export let showIcon = false
 
 <style >
 .search-primary {
-	background: var(--background-linear);
+	background: #ffffff;
 	border-radius: 28px;
 	height: 56px;
 	padding: 16px 56px;
@@ -48,7 +48,7 @@ export let showIcon = false
 }
 :global(.solo-input) {
 	flex-grow: 1;
-	color: var(--mdc-theme-on-surface, #000);
+	color: #000000;
 	margin: 0 6px 0 0;
 	border: 0;
 	outline: 0;

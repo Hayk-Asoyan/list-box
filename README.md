@@ -32,7 +32,7 @@ Use it within your Svelte template:
 
 ```html
 <Dropdown items={items} bind:selected={selected}>
-    <span slot="trigger">{selected}</span>
+    <span slot="trigger" let:selected>{selected}</span>
     <span slot="item" let:item>{item}</span>
 </Dropdown>
 ```
@@ -76,8 +76,8 @@ CSS classes:
 ### Basic Example
 
 ```html
-<Dropdown items={['Option 1', 'Option 2', 'Option 3']} bind:selected={selected}>
-    <span slot="trigger">{selected}</span>
+<Dropdown items={['Option 1', 'Option 2', 'Option 3']} on:select={handleSelect}>
+    <span slot="trigger" let:selected>{selected}</span>
     <span slot="item" let:item>{item}</span>
 </Dropdown>
 ```
@@ -85,8 +85,8 @@ CSS classes:
 ### Example with Search
 
 ```html
-<Dropdown items={countries} isSearch bind:selected={selected}>
-    <span slot="trigger">{selected ? selected.name : 'Select a country'}</span>
+<Dropdown items={countries} isSearch on:select={handleSelect}>
+    <span slot="trigger" let:selected>{selected ? selected.name : 'Select a country'}</span>
     <span slot="item" let:item>{item.name}</span>
 </Dropdown>
 ```
