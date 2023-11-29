@@ -23,7 +23,7 @@ export let showIcon = false
 		placeholder="{placeholder}" />
 </div>
 
-<style lang="scss">
+<style >
 .search-primary {
 	background: var(--background-linear);
 	border-radius: 28px;

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/list-box.iml" filepath="$PROJECT_DIR$/.idea/list-box.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/list-box-svelte.iml" filepath="$PROJECT_DIR$/.idea/list-box-svelte.iml" />
     </modules>
   </component>
 </project>
